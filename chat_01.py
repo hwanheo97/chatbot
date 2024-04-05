@@ -15,8 +15,7 @@ Original file is located at
 import streamlit as st
 from langchain.llms import OpenAI
 from langchain_community.chat_models import ChatOpenAI
-#from langchain.language_models.llms import OpenAI
-
+from langchain.language_models.llms import OpenAI
 
 
 st.set_page_config(page_title="🦜🔗 Ben's 인공지능 ! 질문하세요~ ")
