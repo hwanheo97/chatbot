@@ -28,7 +28,7 @@ st.title('🦜🔗 인공지능! 질문하세요~ ')
 
 
 import os
-#os.environ["OPENAI_API_KEY"] = "auth_key"  
+os.environ["OPENAI_API_KEY"] = "auth_key"  
 
 
 def generate_response(input_text):  #llm이 답변 생성
