@@ -25,9 +25,9 @@ import streamlit as st
 from langchain.llms import OpenAI
 from langchain_community.chat_models import ChatOpenAI
 
-headers ={ 
-    "authorization" : st.secrets["auth_token"],
-    "content-type": "application/python" }
+# headers ={ 
+#     "authorization" : st.secrets["auth_token"],
+#     "content-type": "application/python" }
 
 st.set_page_config(page_title="🦜🔗 Ben's 인공지능 ! 질문하세요~ ")
 st.title('🦜🔗 인공지능! 질문하세요~ ')
