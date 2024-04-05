@@ -18,18 +18,13 @@ from langchain_community.chat_models import ChatOpenAI
 #from langchain.language_models.llms import OpenAI
 
 
-headers = {
-    "authorization": st.secrets["auth_token"],
-    "content-type": "application/python"
-}
 
 st.set_page_config(page_title="🦜🔗 Ben's 인공지능 ! 질문하세요~ ")
 st.title('🦜🔗 인공지능! 질문하세요~ ')
 
 
 import os
-os.environ["OPENAI_API_KEY"] = "auth_key"  
-
+os.environ["OPENAI_API_KEY"] = st.secrets["auth_key"] #openai 키 입력
 
 def generate_response(input_text):  #llm이 답변 생성
     llm = OpenAI(model_name='gpt-4-0613', temperature=0)
