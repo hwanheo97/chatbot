@@ -27,7 +27,7 @@ from langchain_community.chat_models import ChatOpenAI
 
 # Everything is accessible via the st.secrets dict:
 # #st.write("DB username:", st.secrets["db_username"])
-st.write("OPENAI_API_KEY:", st.secrets["auth_token"])
+# st.write("OPENAI_API_KEY:", st.secrets["auth_token"])
 
 
 
