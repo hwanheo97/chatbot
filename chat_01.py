@@ -25,15 +25,26 @@ import streamlit as st
 from langchain.llms import OpenAI
 from langchain_community.chat_models import ChatOpenAI
 
-# headers ={ 
-#     "authorization" : st.secrets["auth_token"],
-#     "content-type": "application/python" }
+# Everything is accessible via the st.secrets dict:
+# #st.write("DB username:", st.secrets["db_username"])
+# st.write("Key password:", st.secrets["db_password"])
+
+
+
 
 st.set_page_config(page_title="🦜🔗 Ben's 인공지능 ! 질문하세요~ ")
 st.title('🦜🔗 인공지능! 질문하세요~ ')
 
+
+
 import os
-os.environ["OPENAI_API_KEY"] = "auth_token"  
+#os.environ["OPENAI_API_KEY"] = "auth_token"  
+
+# And the root-level secrets are also accessible as environment variables:
+st.write(
+    "Has environment variables been set:",
+    os.environ["OPENAI_API_KEY""] == st.secrets["auth_token"],
+)
 
 def generate_response(input_text):  #llm이 답변 생성
     llm = OpenAI(model_name='gpt-4-0613', temperature=0)
