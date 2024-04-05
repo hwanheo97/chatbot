@@ -38,7 +38,7 @@ st.title('🦜🔗 인공지능! 질문하세요~ ')
 
 
 import os
-os.environ["OPENAI_API_KEY"] = "auth_token"  
+#os.environ["OPENAI_API_KEY"] = "auth_token"  
 
 # And the root-level secrets are also accessible as environment variables:
 st.write(
