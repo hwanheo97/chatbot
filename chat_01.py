@@ -43,7 +43,7 @@ import os
 # And the root-level secrets are also accessible as environment variables:
 st.write(
     "Has environment variables been set:",
-    os.environ["OPENAI_API_KEY""] == st.secrets["auth_token"],
+    os.environ["OPENAI_API_KEY"] == st.secrets["auth_token"],
 )
 
 def generate_response(input_text):  #llm이 답변 생성
