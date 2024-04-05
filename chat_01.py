@@ -8,7 +8,7 @@ Original file is located at
 """
 headers ={ 
     "authorization" : st.secrets["my_auth_key"],
-    "content-type": "applicatiov/python" }
+    "content-type": "application/python" }
 
 #langchain==0.0.350에서 dependency 오류가 발생하여 기존 langchanin 삭제
 #!pip3 uninstall -y langchain
