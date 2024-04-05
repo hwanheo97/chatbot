@@ -1,4 +1,4 @@
-pip install langchain
+langchain
 openai==0.28.1 
 langchain-community 
 streamlit==1.29.0
