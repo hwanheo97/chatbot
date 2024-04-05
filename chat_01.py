@@ -17,7 +17,7 @@ from langchain.llms import OpenAI
 from langchain_community.chat_models import ChatOpenAI
 
 headers = {
-    "authorization": st.secrets["auth_token"]
+    "authorization": st.secrets["auth_token"],
     "content-type": "application/python"
 }
 
