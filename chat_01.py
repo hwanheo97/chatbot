@@ -29,7 +29,7 @@ st.set_page_config(page_title="🦜🔗 Ben's 인공지능 ! 질문하세요~ ")
 st.title('🦜🔗 인공지능! 질문하세요~ ')
 
 import os
-os.environ["OPENAI_API_KEY"] = "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"  #openai 키 입력
+os.environ["OPENAI_API_KEY"] = "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"  
 
 def generate_response(input_text):  #llm이 답변 생성
     llm = OpenAI(model_name='gpt-4-0613', temperature=0)
